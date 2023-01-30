@@ -1,0 +1,32 @@
+name: Deploy Infra
+
+on:
+  workflow_dispatch:
+
+env:
+  resourceGroupName: lab
+  storageNamePrefix: labtest
+  
+
+jobs:
+  infra-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.2
+
+      # Login into Azure
+      - name: Azure Login
+        uses: Azure/login@v1
+        with:
+          creds:  ${{ secrets.AZURE_CREDENTIALS }}
+
+      # Deploy Bicep template
+      - name: Deploy Azure Resource Manager (ARM) Template
+        uses: Azure/arm-deploy@v1
+        with:
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION  }}
+          resourceGroupName: ${{ env.resourceGroupName }}
+          template: ./infra/templates/deploy_envt.bicep
+          parameters: ./infra/envts/production/deploy_envt.parameters.json storageNamePrefix=${{ env.storageNamePrefix }} 
+

@@ -1,0 +1,13 @@
+# This is a simple workflow 
+
+name: 'GitHub Workflow Demo'
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  sayHello:
+    runs-on: 
+    steps: 
+    - name: runscript-to-say-hello
+      run:  echo "Howdy GitHub Actions"
