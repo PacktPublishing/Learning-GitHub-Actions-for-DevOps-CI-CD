@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "acr_name": {
+            "value": "techsckool123acr"
+        },
+        "asb_name": {
+            "value": "techsckool123asb"
+        },
+        "app_name": {
+            "value": "techsckool123app"
+        }
+    }
+}
