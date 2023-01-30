@@ -1,0 +1,7 @@
+C:\Learning Lab\GitHubActions\WebApplication01\bin\Debug\net6.0\publish\WebApplication01.exe
+C:\Learning Lab\GitHubActions\WebApplication01\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Learning Lab\GitHubActions\WebApplication01\bin\Debug\net6.0\publish\appsettings.json
+C:\Learning Lab\GitHubActions\WebApplication01\bin\Debug\net6.0\publish\WebApplication01.dll
+C:\Learning Lab\GitHubActions\WebApplication01\bin\Debug\net6.0\publish\WebApplication01.deps.json
+C:\Learning Lab\GitHubActions\WebApplication01\bin\Debug\net6.0\publish\WebApplication01.runtimeconfig.json
+C:\Learning Lab\GitHubActions\WebApplication01\bin\Debug\net6.0\publish\WebApplication01.pdb
